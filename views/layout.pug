@@ -1,0 +1,15 @@
+html
+    head
+        title= title
+        script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js")
+        link(rel="stylesheet", href="/css/footer.css")
+    body
+        .container
+            h1 
+                | #{title} 
+                small.text-muted v#{version}
+            hr
+            block content
+        footer.footer
+            .container.text-center
+                span YOLO
